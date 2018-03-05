@@ -1,5 +1,8 @@
-var React = require ('react');
-var { Text, View, Button, AppRegistry} = require('react-native');
+//var React = require ('react');
+//var { Text, View, Button, AppRegistry} = require('react-native');
+// Nova forma es6 para importacao de modulos
+import React from 'react';
+import { Text, View, Button, AppRegistry} from 'react-native';
 
 
 const geraNumeroAleatorio = () => {
