@@ -1,29 +1,39 @@
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { Text, AppRegistry , View } from 'react-native';
 
 //Formatacoes
 const Estilos = {
   estiloTexto: {
     fontSize: 40,
-    backgroundColor: '#08509B',  
-    paddingTop: 15,
-    color: '#fff',
-    //fontStyle: 'italic'
-    //fontWeight: '300' //100 e 900
-    //textAlign: 'left'
+    backgroundColor: '#08509B'
+  },
 
-    textDecorationLine: 'underline'
+  estiloTexto2: {
+    fontSize: 40,
+    backgroundColor: '#2A48FA'
+  },
 
-    // shadowColor: '#000',
-    // shadowOffset: { width: 0, height: 2 },
-    // shadowOpacity: 0.4
+  estiloView: {
+    backgroundColor: 'skyblue',
+    height: 300,
+    justifyContent: 'space-around',
+    alignItems: 'stretch',
+    flexDirection: 'column'
   }
 };
 
 //Criar component
 const App = () => {
+
+  const { estiloTexto , estiloTexto2, estiloView } = Estilos;
+  
   return (
-    <Text style={ Estilos.estiloTexto } >Frases do dia</Text>
+    <View style={estiloView}> 
+      <Text style={estiloTexto} >A</Text>
+      <Text style={estiloTexto2} >B</Text>
+      <Text style={estiloTexto} >C</Text>
+    </View>
+    
   );
 };
 
